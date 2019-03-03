@@ -1,0 +1,38 @@
+{
+  "session": {
+      "events": [
+        {
+          "etype": "page-load",
+          "metadata": {
+            "url": "https://www.dplay.se/program"
+          }
+        },
+        {
+          "etype": "click",
+          "metadata": {
+            "target": "394fe285-071a-447d-bcb8-41546ff02f50"
+          }
+        },
+        {
+          "etype": "login",
+          "metadata": {
+            "username": "JohnShmoe",
+            "package": "premium"
+          }
+        },
+        {
+          "etype": "click",
+          "metadata": {
+            "target": "394fe285-071a-447d-bcb8-41546ff02f50"
+          }
+        },
+        {
+          "etype": "play-video",
+          "metadata": {
+            "id": "8d92b369-b10c-4c98-ae1d-29b8e8cd1dde",
+            "genre": "sport"
+          }
+        }
+      ]
+  }
+}

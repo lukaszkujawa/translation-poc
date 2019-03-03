@@ -1,0 +1,12 @@
+{
+  "session": {
+      "events": [
+        {
+          "etype": "page-load",
+          "metadata": {
+            "url": "https://www.dplay.se/program"
+          }
+        }
+      ]
+  }
+}
