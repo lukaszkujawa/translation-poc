@@ -11,4 +11,5 @@ main = do
   args <- getArgs
   events <- from_file "example.json"
   putStrLn "Translation POC"
-  print events
+
+  mapM_ (putStrLn) $ run_parser events
