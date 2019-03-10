@@ -23,11 +23,11 @@ instance FromJSON Event where
     parseJSON = withObject "Event" $ \v -> do
         et <- v .: "etype"
         case et of
-            String "page-load" -> params EventPageLoad v
-            String "click" -> params EventClick v
-            String "login" -> params EventLogin v
+            String "page-load"  -> params EventPageLoad v
+            String "click"      -> params EventClick v
+            String "login"      -> params EventLogin v
             String "play-video" -> params EventPlayVideo v
-            _ -> return EventUndefined
+            _                   -> return EventUndefined
         where params e v = e <$> v .: "etype" <*> v .:? "metadata"
 
 instance FromJSON MetadataPageLoad
